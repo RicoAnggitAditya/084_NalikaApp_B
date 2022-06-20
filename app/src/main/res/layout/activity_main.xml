@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <ImageView
+        android:id="@+id/R_img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/Img1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/R_img1"
+        android:text="Welcome to Nalika"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:id="@+id/R_text1"
+        />
+
+    <ImageView
+        android:id="@+id/R_img2"
+        android:layout_width="178dp"
+        android:layout_height="192dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/R_text1"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/nalika" />
+
+
+    <LinearLayout
+        android:id="@+id/ly_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/R_img2"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <EditText
+            android:id="@+id/edt_nama"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#CCC8C8"
+            android:hint="Nama"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#CCC8C8"
+            android:hint="Password"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/ly_1"
+        android:layout_centerHorizontal="true"
+        android:width="150dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/login"
+        />
+
+
+</RelativeLayout>
